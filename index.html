@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>ghvst programmer</title>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+
+<style>
+html,body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:black;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+/* centered fancy label */
+#label{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-size:22px;
+  letter-spacing:0.35em;
+  font-weight:600;
+  opacity:0.9;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.35),
+    0 0 20px rgba(255,255,255,0.15);
+  pointer-events:none;
+  white-space:nowrap;
+}
+</style>
+</head>
+<body>
+
+<div id="label">ghvst programmer ×</div>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
